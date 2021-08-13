@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Text('Learning Day 1 Flutter'),
+            child: Text('Learning Day 1 Flutter!'),
           ),
         ),
       ),

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:intro/post.dart';
+import 'package:intro/profile.dart';
+
+import 'appbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,16 +13,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Size size = MediaQuery.of(context).size;
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Learn Flutter'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Learning Day 1 Flutter!'),
-          ),
-        ),
+        backgroundColor: Color(0xff1e0d2d),
+        body: ListView(children: [
+          Stack(children: [
+            MyPost(),
+            MyProfile(), //profile
+            MyAppBar() //appbar
+          ]),
+        ]),
       ),
     );
   }

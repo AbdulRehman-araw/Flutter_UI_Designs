@@ -19,12 +19,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xff1e0d2d),
-        body: ListView(children: [
-          Stack(children: [
-            MyPost(),
-            MyProfile(), //profile
-            MyAppBar() //appbar
-          ]),
+        body: Stack(children: [
+          ListView(
+            children: [
+              MyPost(),
+            ],
+          ),
+          MyProfile(), //profile
+          MyAppBar(),
+          //appbar
         ]),
       ),
     );

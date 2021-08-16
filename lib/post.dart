@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:intro/singlepost.dart';
-import 'package:intro/styling.dart';
 
 class MyPost extends StatelessWidget {
   const MyPost({Key? key}) : super(key: key);

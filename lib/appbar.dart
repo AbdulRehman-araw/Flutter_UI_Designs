@@ -11,18 +11,21 @@ class MyAppBar extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.purple,
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(80.0))),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Text(
-            'Profile',
-            style: titleText,
-          ),
-          Icon(
-            Icons.search,
-            size: 32.0,
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text(
+              "Profile",
+              style: titleText,
+            ),
+            Icon(
+              Icons.search,
+              size: 30.0,
+            ),
+          ],
+        ),
       ),
     );
   }
